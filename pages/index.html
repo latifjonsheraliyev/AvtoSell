@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header class="w-[90%] m-auto">
+      <nav class="mt-5 flex items-center justify-between">
+        <img class="" src="../picture/Image (1).svg" alt="" />
+
+        <input type="checkbox" id="check" class="hidden" />
+        <ul class="links flex items-center justify-between gap-7">
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#">
+              О нас
+            </a>
+          </li>
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#"
+              >Как купить</a
+            >
+          </li>
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#"
+              >Преимущества</a
+            >
+          </li>
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a class="font-normal text-base tracking-wider text-black" href="#"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <nav class="flex items-center gap-7">
+          <div class="icon flex items-center gap-3">
+            <i class="fa-brands fa-telegram text-[25px]"></i>
+            <i class="fa-brands fa-instagram text-[25px]"></i>
+            <i class="fa-brands fa-facebook text-[25px]"></i>
+          </div>
+
+          <div class="tel max-lg:hidden">
+            <a class="text-[15px]" href="+7 (8352) 67-52-52"
+              >+7 (8352) 67-52-52</a
+            ><br />
+            <a class="text-[15px]" href="+7 (8352) 67-52-52"
+              >+7 (8352) 67-52-52</a
+            >
+          </div>
+
+          <label class="lg:hidden text-[25px]" for="check"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </nav>
+      </nav>
+    </header>
+    <!-- HEADER-END  -->
+
+    <!-- SHOWCASE  -->
+    <section class="pt-24 max-sm:pt-10">
+      <!-- container -->
+      <div
+        class="w-[90%] m-auto grid grid-cols-2 gap-10 items-center max-lg:grid-cols-1 max-lg:text-center"
+      >
+        <div class="">
+          <h2
+            class="font-bold text-[50px] leading-[119%] text-black max-lg:text-center max-sm:text-[30px]"
+          >
+            Купите автомобиль дешевле на 60%*
+          </h2>
+
+          <!-- hideen img  -->
+          <img
+            class="hidden max-lg:block mt-8"
+            src="../picture/Image.png"
+            alt=""
+          />
+
+          <p
+            class="font-medium text-[18px] leading-[160%] text-black mt-6 max-sm:text-[15px]"
+          >
+            Привезем автомобиль под ключ со всеми документами. Подбор автомобиля
+            под любой запрос БЕСПЛАТНО
+          </p>
+          <button
+            class="mt-8 bg-[#F50E30] rounded-[8px] px-8 py-2 w-[280px] h-[50px] font-bold text-[18px] leading-[117%] text-center text-[white] hover:bg-orange max-sm:w-[100%]"
+          >
+            Оставить заявку
+          </button>
+        </div>
+
+        <div class="">
+          <img class="max-lg:hidden" src="../picture/Image.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- SHOWCASE-END  -->
+
+    <!-- About Company -->
+    <section class="pt-24 pb-24 mt-20 bg-[#F4F6F8] max-md:pt-14 max-md:mt-10">
+      <div class="w-[90%] m-auto">
+        <div class="text-center">
+          <h2
+            class="font-extrabold text-[44px] leading-[123%] text-center text-black max-md:text-[30px]"
+          >
+            Поможем вам выгодно купить и привезти автомобиль в любую точку
+            России
+          </h2>
+          <p
+            class="font-normal text-[24px] leading-[133%] text-center text-black mt-5 max-md:text-[18px]"
+          >
+            Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же
+            бюджет
+          </p>
+          <button
+            class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 w-[235px] h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] max-sm:hidden"
+          >
+            Оставить заявку
+          </button>
+        </div>
+
+        <!-- card  -->
+        <div
+          class="grid grid-cols-3 gap-5 items-center mt-10 max-lg:grid-cols-2 max-md:grid-cols-1"
+        >
+          <div
+            class="rounded-[20px] bg-[white] shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-5 relative"
+          >
+            <h3 class="font-bold text-[36px] leading-[122%] text-black">
+              С пробегом
+            </h3>
+            <p
+              class="mt-5 w-[80%] font-normal text-[16px] leading-[175%] text-[rgba(0,0,0,0.8)]"
+            >
+              Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+              Авито и Авто.ру
+            </p>
+            <img class="position_img" src="../picture/Image (2).svg" alt="" />
+            <br /><br /><br />
+          </div>
+
+          <div
+            class="rounded-[20px] bg-[white] shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-5 relative"
+          >
+            <h3 class="font-bold text-[36px] leading-[122%] text-black">
+              Новые
+            </h3>
+            <p
+              class="mt-5 w-[80%] font-normal text-[16px] leading-[175%] text-[rgba(0,0,0,0.8)]"
+            >
+              Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+              Авито и Авто.ру
+            </p>
+            <img class="position_img2" src="../picture/Switch.svg" alt="" />
+            <br /><br /><br />
+          </div>
+
+          <div
+            class="rounded-[20px] bg-[white] shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-5 relative"
+          >
+            <h3 class="font-bold text-[36px] leading-[122%] text-black">
+              Под ваш бюджет
+            </h3>
+            <p
+              class="mt-5 w-[80%] font-normal text-[16px] leading-[175%] text-[rgba(0,0,0,0.8)]"
+            >
+              Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+              Авито и Авто.ру
+            </p>
+            <img class="position_img" src="../picture/Image (3).svg" alt="" />
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Company-end -->
+
+    <!-- MARKETING  -->
+    <section class="grid grid-cols-2 gap-10 max-lg:grid-cols-1 max-sm:gap-3">
+      <div class="">
+        <img class="w-[100%] h-[100%]" src="../picture/Container.png" alt="" />
+      </div>
+      <div class="w-[90%] m-auto pt-7 pb-7">
+        <h2 class="font-black text-[44px] leading-[123%] text-black">О нас</h2>
+        <p class="font-medium text-[20px] leading-[140%] text-black">
+          Мы автосалон и официальный партнер крупнейших мировых авто-аукционов:
+          IAA (Insurance Auto Auction), Copart, Manheim
+        </p>
+
+        <div class="gridd">
+          <img
+            class="bg-[#F50E30] p-2 rounded-[100%]"
+            src="../picture/Text input container.svg"
+            alt=""
+          />
+          <p>Работаем без посредников</p>
+        </div>
+
+        <div class="gridd">
+          <img
+            class="bg-[#F50E30] p-2 rounded-[100%]"
+            src="../picture/Text input container.svg"
+            alt=""
+          />
+          <p>Работаем без посредников</p>
+        </div>
+
+        <div class="gridd">
+          <img
+            class="bg-[#F50E30] p-2 rounded-[100%]"
+            src="../picture/Text input container.svg"
+            alt=""
+          />
+          <p>Работаем без посредников</p>
+        </div>
+        <p class="font-medium text-[16px] leading-[150%] text-black mt-5">
+          Мы берем на себя полное сопровождение сделки до передачи автомобиля в
+          руки клиенту.
+        </p>
+
+        <button
+          class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 w-[235px] h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] max-md:w-[100%]"
+        >
+          Оставить заявку
+        </button>
+      </div>
+    </section>
+    <!-- MARKETING-END  -->
+
+    <!-- suggestions -->
+    <!-- Swiper -->
+
+    <!-- Swiper -->
+    <section class="w-[90%] m-auto mt-20">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide bg-white shadow-[0_4px_16px_0_rgba(0,0,0,0.08)] p-4"
+          >
+            <img src="../picture/Image (2).png" alt="" />
+
+            <h2 class="font-black text-[28px] leading-[123%] text-black mt-4">
+              Toyota RAV4 2022
+            </h2>
+            <div class="details mt-7">
+              <span>Yurgani</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">5 700 km</span>
+            </div>
+            <div class="details">
+              <span>Dvigatel hajmi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">2.0</span>
+            </div>
+            <div class="details">
+              <span>Quvvat</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">149 ot kuchi</span>
+            </div>
+            <div class="details">
+              <span>Uzatma qutisi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">Avtomat</span>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p>3 300 000 ₽</p>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p class="text-[red] font-bold">2 700 000 ₽</p>
+            </div>
+
+            <button
+              class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] w-[100%]"
+            >
+              Оставить заявку
+            </button>
+          </div>
+
+          <!-- ______________________________________________ -->
+
+          <div
+            class="swiper-slide bg-white shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-4"
+          >
+            <img src="../picture/Image (3).png" alt="" />
+
+            <h2 class="font-black text-[28px] leading-[123%] text-black mt-4">
+              Toyota RAV4 2022
+            </h2>
+            <div class="details mt-7">
+              <span>Yurgani</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">5 700 km</span>
+            </div>
+            <div class="details">
+              <span>Dvigatel hajmi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">2.0</span>
+            </div>
+            <div class="details">
+              <span>Quvvat</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">149 ot kuchi</span>
+            </div>
+            <div class="details">
+              <span>Uzatma qutisi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">Avtomat</span>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p>3 300 000 ₽</p>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p class="text-[red] font-bold">2 700 000 ₽</p>
+            </div>
+
+            <button
+              class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] w-[100%]"
+            >
+              Оставить заявку
+            </button>
+          </div>
+
+          <!-- ______________________________________________ -->
+
+          <div
+            class="swiper-slide bg-white shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-4"
+          >
+            <img src="../picture/Image (4).png" alt="" />
+
+            <h2 class="font-black text-[28px] leading-[123%] text-black mt-4">
+              Toyota RAV4 2022
+            </h2>
+            <div class="details mt-7">
+              <span>Yurgani</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">5 700 km</span>
+            </div>
+            <div class="details">
+              <span>Dvigatel hajmi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">2.0</span>
+            </div>
+            <div class="details">
+              <span>Quvvat</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">149 ot kuchi</span>
+            </div>
+            <div class="details">
+              <span>Uzatma qutisi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">Avtomat</span>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p>3 300 000 ₽</p>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p class="text-[red] font-bold">2 700 000 ₽</p>
+            </div>
+
+            <button
+              class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] w-[100%]"
+            >
+              Оставить заявку
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide bg-white shadow-[0_2px_16px_0_rgba(0,0,0,0.08)] p-4"
+          >
+            <img src="../picture/Image (4).png" alt="" />
+
+            <h2 class="font-black text-[28px] leading-[123%] text-black mt-4">
+              Toyota RAV4 2022
+            </h2>
+            <div class="details mt-7">
+              <span>Yurgani</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">5 700 km</span>
+            </div>
+            <div class="details">
+              <span>Dvigatel hajmi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">2.0</span>
+            </div>
+            <div class="details">
+              <span>Quvvat</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">149 ot kuchi</span>
+            </div>
+            <div class="details">
+              <span>Uzatma qutisi</span><span class="dashed-line"></span
+              ><span class="text-[black] font-bold">Avtomat</span>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p>3 300 000 ₽</p>
+            </div>
+
+            <div class="grid grid-cols-2 items-center gap-10 mt">
+              <p>Цена на вторичном рынке в РФ</p>
+              <p class="text-[red] font-bold">2 700 000 ₽</p>
+            </div>
+
+            <button
+              class="mt-8 bg-[#F50E30] rounded-[8px] px-10 py-2 h-[50px] font-semibold text-[18px] leading-[140%] text-center text-[white] w-[100%]"
+            >
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, // 3 ta slayd ko'rinadi (default)
+        spaceBetween: 30, // slaydlar orasidagi masofa
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000, // Slayder har 3 soniyada avtomatik ravishda o'tadi
+          disableOnInteraction: false, // Foydalanuvchi o'zaro ta'sir qilsa ham autoplay davom etadi
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1, // 280px gacha bo'lgan ekranda 1 ta slayd ko'rinadi
+            spaceBetween: 10, // Masofa 10px ga kamayadi
+          },
+          640: {
+            slidesPerView: 2, // 640px gacha bo'lgan ekranda 2 ta slayd
+            spaceBetween: 20, // Masofa 20px
+          },
+          1024: {
+            slidesPerView: 3, // 1024px va undan katta ekranda 3 ta slayd
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <!-- suggestions-end -->
+  </body>
+</html>

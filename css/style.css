@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* root  */
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "SF Pro Display", sans-serif;
+  --third-family: "Roboto", sans-serif;
+  --font3: "SF Pro Text", sans-serif;
+}
+
+@media (max-width: 1028px) {
+  .links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    transition: 0.4s;
+    padding: 30px 0px 0px 20px;
+  }
+  #check:checked ~ .links {
+    left: 0;
+  }
+  .links li a {
+    color: #fff;
+  }
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(0, 5, 78);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+a:hover {
+  color: rgb(0, 5, 78);
+}
+
+@media (max-width: 1028px) {
+  .links li a {
+    color: #f50e30;
+    font-weight: 800;
+  }
+}
+
+/* ---------------------------------- */
+
+.position_img {
+  position: absolute;
+  right: 7%;
+  bottom: 3%;
+}
+
+.position_img2 {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+/* ____________________________ */
+
+.gridd {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.gridd p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+}
+
+.swiper-button-next{
+  background-color: #f50e31;
+  border-radius: 100%;
+  padding: 30px;
+  color: white;
+}
+.swiper-button-prev{
+   background-color: #f50e31;
+  border-radius: 100%;
+  padding: 30px;
+  color: white;
+}
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+
+      font-size: 18px;
+      background: #fff;
+
+    }
+    .swiper-slide img{
+      width: 100%;
+      height: 100%;
+    }
+    .details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dashed-line {
+  flex-grow: 1;
+  border-bottom: 1px dashed #ccc; /* Adjust the color and style */
+  margin: 0 10px;
+  height: 1px;
+}
+
+
+
+
