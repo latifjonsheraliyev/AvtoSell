@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AvtoSell</title>
+    <link
+      rel="shortcut icon"
+      href="../picture/Image (1).svg"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -435,6 +440,301 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <div class="max-w-2xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Часто задаваемые вопросы</h2>
+      <div class="space-y-2">
+        <!-- FAQ Item Start -->
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие способы оплаты у вас?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+          <div x-show="open" class="mt-2 text-gray-700" x-cloak>
+            <p>Описание способов оплаты.</p>
+          </div>
+        </div>
+        <!-- FAQ Item End -->
+
+        <!-- FAQ Item Start -->
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие автомобили вы доставляете?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+        <!-- FAQ Item End -->
+
+        <!-- Repeat the block above for additional FAQ items -->
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Могу ли я купить через вас запчасти?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+          <div x-show="open" class="mt-2 text-gray-700" x-cloak>
+            <p>
+              Да, при покупке автомобиля с повреждениями, мы подберем для него
+              запчасти.
+            </p>
+          </div>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие гарантии, что во время доставки с автомобилем ничего не
+            произойдет?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие документы я получу в комплекте с автомобилем?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            В какие города России вы осуществляете доставку автомобиля?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие сроки доставки автомобиля?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Можно ли вернуть автомобиль на аукцион после покупки?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Какие сроки оплаты после выигрыша на аукционе?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+
+        <div x-data="{ open: false }" class="border-b border-gray-300 pb-4">
+          <button
+            @click="open = !open"
+            class="flex justify-between w-full text-left text-lg font-semibold"
+          >
+            Что если я откажусь от покупки автомобиля?
+            <span
+              :class="open ? 'transform rotate-45 text-red-500' : 'text-red-500'"
+              class="text-2xl"
+              >+</span
+            >
+          </button>
+        </div>
+        <!-- FAQ Item End -->
+      </div>
+    </div>
+
+    <!-- ______________________________________________ -->
+
+    <section class="bgbg">
+      <div
+        class="flex flex-col lg:flex-row items-start lg:items-center justify-between max-w-5xl mx-auto px-4 py-8 space-y-8 lg:space-y-0 lg:space-x-8"
+      >
+        <!-- Left Section: Consultation Form -->
+        <div class="w-full lg:w-1/2 border p-6 rounded-lg">
+          <h2 class="text-xl font-bold mb-2">Только телефон, и мы в деле</h2>
+          <p class="text-gray-600 mb-4">
+            Специалист перезвонит Вам в течение 5 минут, в рабочее время для
+            уточнения деталей
+          </p>
+          <input
+            type="text"
+            placeholder="+7 (927) 666-52-97"
+            class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+          />
+          <button
+            class="w-full bg-red-500 text-white py-3 rounded-lg text-center font-semibold hover:bg-red-600 mb-4"
+          >
+            Получить консультацию
+          </button>
+          <div class="flex items-start space-x-2 text-sm">
+            <input type="checkbox" class="mt-1" />
+            <label class="text-gray-600"
+              >Нажимая на кнопку вы соглашаетесь с условиями Политики
+              конфиденциальности</label
+            >
+          </div>
+          <h3 class="text-lg font-bold mt-6">
+            Связаться с нами через мессенджер
+          </h3>
+          <div class="flex space-x-4 mt-4">
+            <button
+              class="flex items-center space-x-2 border-2 border-red-500 text-red-500 py-2 px-4 rounded-full hover:bg-red-500 hover:text-white transition"
+            >
+              <span>Whatsapp</span>
+            </button>
+            <button
+              class="flex items-center space-x-2 border-2 border-red-500 text-red-500 py-2 px-4 rounded-full hover:bg-red-500 hover:text-white transition"
+            >
+              <span>Telegram</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Section: Cost Estimation -->
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-2xl lg:text-3xl font-bold mb-4">
+            Точный расчет стоимости уже через 1 час
+          </h2>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-2">
+              <span class="text-red-500 text-xl">✔</span>
+              <p class="text-gray-700">
+                Расскажем какие автомобили вы можете купить с наибольшей
+                выгодой.
+              </p>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-red-500 text-xl">✔</span>
+              <p class="text-gray-700">
+                Отправим подобранные автомобили на ваш WatsApp или Telegram
+              </p>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-red-500 text-xl">✔</span>
+              <p class="text-gray-700">
+                Сделаем точный расчет стоимости автомобиля с доставкой в ваш
+                город “под ключ”
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-gray-100 p-8 max-w-6xl mx-auto">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6">Наши контакты</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Address Section -->
+        <div>
+          <p class="text-gray-500 font-semibold">Адрес:</p>
+          <p class="text-gray-800 mt-2">
+            428000, г. Чебоксары,<br />
+            Марпосадское шоссе, 14.
+          </p>
+          <p class="text-gray-500 font-semibold mt-4">E-mail:</p>
+          <p class="text-gray-800 mt-2">carmark21@auto.ru</p>
+        </div>
+
+        <!-- Working Hours & Social Media Section -->
+        <div>
+          <p class="text-gray-500 font-semibold">Время работы:</p>
+          <p class="text-gray-800 mt-2">Ежедневно 10:00 до 19:00</p>
+          <p class="text-gray-500 font-semibold mt-4">Соц. сети:</p>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-red-500 text-xl hover:text-red-600"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a href="#" class="text-red-500 text-xl hover:text-red-600"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#" class="text-red-500 text-xl hover:text-red-600"
+              ><i class="fab fa-viber"></i
+            ></a>
+            <a href="#" class="text-red-500 text-xl hover:text-red-600"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Phone Section -->
+        <div>
+          <p class="text-gray-500 font-semibold">Телефон:</p>
+          <p class="text-gray-800 mt-2">8 927 997 12 42</p>
+          <p class="text-gray-800">8 927 997 12 42</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[90%] m-auto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.073069253112!2d69.2012376751859!3d41.28551417131303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sen!2s!4v1727508172361!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

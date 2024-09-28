@@ -135,6 +135,15 @@ a:hover {
   margin: 0 10px;
   height: 1px;
 }
+.bgbg{
+  background: url(../picture/Image\ \(6\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
 
 
 
